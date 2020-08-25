@@ -1,0 +1,467 @@
+/*!
+ * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+body {
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    padding-top: 54px;
+    color: #343a40;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 0;
+        padding-left: 17rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.aboutHeader {
+    text-align: center;
+}
+
+.skillHeading {
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.subheading {
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover {
+    background-color: maroon;
+}
+
+.dev-icons {
+    font-size: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 6rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+    color: maroon;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+    outline-color: maroon;
+}
+
+@media (min-width: 992px) {
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+    #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.25rem solid rgba(0, 0, 0, 0.55);
+    }
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
+}
+
+section.resume-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+    min-width: none;
+}
+
+@media (min-width: 768px) {
+    section.resume-section {
+        min-height: 100vh;
+    }
+    section.resume-section .resume-item .resume-date {
+        min-width: 18rem;
+    }
+}
+
+@media (min-width: 992px) {
+    section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+.bg-primary {
+    background-color: 	maroon !important;
+    
+    /* border-right: 0.25rem solid black; */
+}
+
+.text-primary {
+    color: maroon !important;
+}
+
+a {
+    color: maroon;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: maroon;
+}
+
+#skillsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-inline-item{
+    margin:4rem;
+}
+
+
+/* Typewriter custom */
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 30px;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-moz-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-webkit-keyframes "blink" {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-ms-keyframes "blink" {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-o-keyframes "blink" {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+.nounderline:hover {
+    text-decoration: none;
+}
+
+#skills {
+    text-align: center;
+}
+
+@font-face {
+    font-family: devicon;
+    src: url(../fonts/icomoon.eot);
+    src: url(../fonts/icomoon.eot) format('embedded-opentype'), url(../fonts/icomoon.woff) format('woff'), url(../fonts/icomoon.ttf) format('truetype'), url(../fonts/icomoon.svg) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+[class*=" devicon-"],
+[class^=devicon-] {
+    font-family: devicon;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.devicon-go::before {
+    content: "\e908";
+}
+
+.devicon-kubernetes::before {
+    content: "\e90b";
+}
+
+.devicon-css::before {
+    content: "\e900";
+}
+
+.devicon-docker::before {
+    content: "\e902";
+}
+
+.devicon-github-wordmark::before {
+    content: "\e903";
+}
+
+.devicon-gitlab-wordmark::before {
+    content: "\e906";
+}
+
+.devicon-git::before {
+    content: "\e907";
+}
+
+.devicon-html::before {
+    content: "\e909";
+}
+
+.devicon-javascript::before {
+    content: "\e90a";
+}
+
+.devicon-mysql::before {
+    content: "\e90c";
+}
+
+.devicon-redis::before {
+    content: "\e90d";
+}
+
+.devicon-sass::before {
+    content: "\e90e";
+}
+
+.devicon-vuejs::before {
+    content: "\e90f";
+}
+
+.devicon-github::before {
+    content: "\e901";
+}
+
+.devicon-linkdin::before {
+    content: "\f08c";
+}
+
+.devicon-gitlab::before {
+    content: "\f296";
+}
+
+.devicon-star::before {
+    content: "\e910";
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillStars {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.skillStarFull {
+    color: maroon;
+}
+
+.projectLink:hover  {
+    text-decoration:none;
+}
+
+.project {
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.projectsHeading {
+    text-align: center;
+}
+
+.projectImage {
+    max-width: 58rem;
+    max-height: 30rem;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 0.15rem;
+    border-color: black;
+}
+
+.projectHeading {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 3rem;
+    color: #343a40;
+}
+
+.projectHeading:hover {
+    color: maroon;
+}
+
+.projectDescriptionHeading {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.projectSkillsHeading {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.projectSkillsSubheading {
+    font-size: 1.35rem;
+    margin-top: 1.2rem;
+}
+
+.projectSkillsIcons {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projectSkillsIcon {
+    margin: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contactDetailHeading {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.contactsHeading {
+    text-align: center;
+    margin-bottom: 5rem;
+}
