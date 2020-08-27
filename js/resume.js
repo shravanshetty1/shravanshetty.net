@@ -48,6 +48,7 @@ var skills = {
     "img/kubernets.svg",
     "img/mysql.svg",
     "img/redis.svg",
+    "img/mongodb.svg",
   ],
   "competency":{
     "img/html5.svg":2,
@@ -59,6 +60,7 @@ var skills = {
     "img/kubernets.svg":1,
     "img/mysql.svg":2,
     "img/redis.svg":2,
+    "img/mongodb.svg":2,
   },
 };
 
