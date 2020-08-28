@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Copyright 2018 The Go Authors. All rights reserved.
+Use of this source code is governed by a BSD-style
+license that can be found in the LICENSE file.
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Go wasm</title>
+</head>
+<body>
+<canvas id="g3n-canvas"></canvas>
+</body>
+<style>
+    body{
+        margin: 0px;
+    }
+    #g3n-canvas{
+        background-color: black;
+    }
+</style>
+<script>
+    canvas = document.getElementById("g3n-canvas")
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas, false);
+    resizeCanvas();
+</script>
+<script src="wasm_exec.js"></script>
+<script>
+    const go = new Go();
+    let mod, inst;
+    WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then(
+        async result => {
+            mod = result.module;
+            inst = result.instance;
+            await go.run(inst);
+        }
+    );
+</script>
+</html>
