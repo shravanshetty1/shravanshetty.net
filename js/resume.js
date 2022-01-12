@@ -1,40 +1,6 @@
 
 var projects = [
-  {
-    "projName":"downloads.nirmata.io",
-    "projLink":"https://downloads.nirmata.io/",
-    "projImage":"img/downloadsNirmata.png",
-    "description":"Website I created for a client for their downloadable content",
-    "technology":[
-      "img/javascript.svg",
-      "img/html5.svg",
-      "img/css-5.svg",
-      "img/hugo.svg",
-      "img/amazon-s3.svg"
-    ]
-  },
-  {
-    "projName":"kyverno",
-    "projLink":"https://github.com/nirmata/kyverno",
-    "projImage":"img/kyverno.png",
-    "description":"Contributor to opensource project 'kyverno' which acts as a policy agent for kubernetes",
-    "technology":[
-      "img/go.svg",
-      "img/kubernets.svg",
-      "img/docker.svg"
-    ]
-  },
-  {
-    "projName":"shravanshetty.net",
-    "projLink":"https://shravanshetty.net",
-    "projImage":"img/website.png",
-    "description":"This is a personal website to showcase basic information about myself and the various projects I have worked on.",
-    "technology":[
-      "img/javascript.svg",
-      "img/html5.svg",
-      "img/css-5.svg"
-    ]
-  }
+ 
 ];
 
 var skills = {
