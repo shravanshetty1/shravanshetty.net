@@ -1,0 +1,37 @@
+{
+  "image": "ipfs://QmUsKpTZWvzyNiqomDhhXQ9XtPL8VC437rqFEzY3fzCJMA",
+  "image_data": null,
+  "external_url": null,
+  "description": "Council Faction Talisman of the Levana Dragons adventure.",
+  "name": "Talisman: Council Faction",
+  "attributes": [
+    {
+      "display_type": null,
+      "trait_type": "Type",
+      "value": "Faction Talisman"
+    },
+    {
+      "display_type": null,
+      "trait_type": "Faction",
+      "value": "Council"
+    },
+    {
+      "display_type": null,
+      "trait_type": "Role",
+      "value": "Member"
+    },
+    {
+      "display_type": null,
+      "trait_type": "Dragon ID",
+      "value": "6396"
+    },
+    {
+      "display_type": null,
+      "trait_type": "Issue Date",
+      "value": "2472-01-12"
+    }
+  ],
+  "background_color": null,
+  "animation_url": null,
+  "youtube_url": null
+}
